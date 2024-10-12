@@ -2,6 +2,9 @@
 
 /*global module */
 
+const JSDOM = require("jsdom").JSDOM;
+const document = (new JSDOM()).window.document;
+
 var svgNS = "http://www.w3.org/2000/svg";
 
 function Svg(wrapper) {
